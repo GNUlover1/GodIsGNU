@@ -1,0 +1,7 @@
+# Local/build artifacts
+*.iso
+*.img
+*.qcow2
+/out/
+/work/
+/tmp/
