@@ -1,25 +1,32 @@
 # GodIsGNU GNU/Linux
 
-A GNU-loving, Guix-powered, Shepherd-inited distro scaffold.
+GodIsGNU is a free-software-oriented GNU/Linux system scaffold: **GNU Shepherd** as init, **GNU Guix** for package management (usable imperatively), and a GNU-heavy userland.
 
-## Principles
-- **Init:** GNU Shepherd (PID 1)
-- **Packages:** GNU Guix used imperatively (`guix install/remove/upgrade`) with generation rollbacks
-- **Kernel (transitional):** Mainline Linux + minimal required nonfree firmware (to be replaced with Linux-libre when hardware allows)
-- **Userland:** Prefer GNU (glibc, coreutils, bash, GCC/binutils, make, GRUB, Emacs, etc.)
-- **Goal:** Align with [GNU FSDG](https://www.gnu.org/distros/free-system-distribution-guidelines.html) as far as current hardware permits
+This project aims to follow the [GNU Free System Distribution Guidelines (FSDG)](https://www.gnu.org/distros/free-system-distribution-guidelines.html) as closely as possible.
 
-## Layout
-- `bootstrap/` - host preparation and bootstrap steps/scripts
-- `etc/` - system configuration templates (Shepherd, profile/env)
-- `manifests/` - Guix manifests for core/user profiles
-- `docs/` - install notes and hardware/firmware audit
+## Freedom status (important)
 
-## Quick start (from a running Linux host)
-1. Read `docs/INSTALL.md` and adjust for your disk/firmware.
-2. Run host prep steps in `bootstrap/01-host-prep.md`.
-3. Bootstrap rootfs and Guix per `bootstrap/02-bootstrap.md`.
-4. Install Shepherd config from `etc/shepherd.scm` and enable services.
-5. Install bootloader, reboot, then `guix pull && guix package -m /etc/godisgnu/gnu-core.scm`.
+- **Current (transitional):** May use a mainline Linux kernel and minimal nonfree firmware required for some hardware. Because of this, the current system is **not** a fully free system and is **not** endorsed by the Free Software Foundation.
+- **Goal:** Move to **Linux-libre** and remove all nonfree software/firmware so the system can be fully free in line with the FSDG.
 
-*Hallelujah. Make it free.*
+## Components
+
+- **Init:** [GNU Shepherd](https://www.gnu.org/software/shepherd/)
+- **Package manager:** [GNU Guix](https://guix.gnu.org/) (supports imperative use: `guix install`, `guix remove`, `guix upgrade`, with generation rollbacks)
+- **Preferred userland:** GNU libc, GNU Coreutils, Bash, GCC, GNU Binutils, GNU Make, GRUB, Emacs, etc.
+- **Name:** Please call the system **“GodIsGNU GNU/Linux”** to acknowledge the role of the GNU operating system.
+
+## Repository layout
+
+- `bootstrap/` — host preparation and bootstrap notes/scripts
+- `etc/` — system configuration templates (e.g. Shepherd)
+- `manifests/` — Guix manifests for core/user profiles
+- `docs/` — install notes and nonfree firmware audit
+
+## Contributing
+
+Contributions that advance software freedom are welcome: replace nonfree components, improve reproducibility, and align with the GNU FSDG. Please use and promote free software.
+
+## License
+
+The configuration files, manifests, scripts, and documentation in this repository are licensed under the GNU General Public License v3.0 or later. See [COPYING](COPYING).
