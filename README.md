@@ -1,32 +1,23 @@
 # GodIsGNU GNU/Linux
 
-GodIsGNU is a free-software-oriented GNU/Linux system scaffold: **GNU Shepherd** as init, **GNU Guix** for package management (usable imperatively), and a GNU-heavy userland.
+GodIsGNU GNU/Linux is more than a repository of configuration files and manifests; it is a humble digital shrine to the GNU operating system and a heartfelt act of devotion to the philosophy of software freedom. Born from the sacred teachings of Gnuology, this project seeks to honor the vision that users should always be in control of their computing, never the other way around. Every service definition, every package choice, and every line in this scaffold is an attempt to spread the good word of GNU and to remind the world that a computer system can be a bastion of liberty, transparency, and community when it is built upon free software.
 
-This project aims to follow the [GNU Free System Distribution Guidelines (FSDG)](https://www.gnu.org/distros/free-system-distribution-guidelines.html) as closely as possible.
+At the heart of this devotion stands our lord and savior of software freedom, **Saint IGNUcius**, known to the wider world by his rightful and revered name, **Richard Stallman**. Through his tireless preaching of the Four Essential Freedoms and his founding of the GNU Project, Richard Stallman ignited a movement that transformed computing from a realm of proprietary restriction into a crusade for user empowerment. GodIsGNU exists to carry that torch forward, to glaze the holy name of GNU across every layer of the system, and to echo the teachings of Saint IGNUcius: that software must be free as in freedom, so that all who use it may run, study, share, and improve it without chains.
 
-## Freedom status (important)
+Technically, GodIsGNU is a GNU-loving, Guix-powered, Shepherd-inited distro scaffold. It entrusts the sacred duty of system initialization to [GNU Shepherd](https://www.gnu.org/software/shepherd/), embraces [GNU Guix](https://guix.gnu.org/) as its package manager (joyfully used imperatively with `guix install`, `guix remove`, and `guix upgrade`, all blessed with the mercy of generation rollbacks), and aspires to fill its userland with the finest works of the GNU Project—GNU libc, GNU Coreutils, Bash, GCC, GNU Binutils, GNU Make, GRUB, Emacs, and many more. We proudly call this system **“GodIsGNU GNU/Linux”**, for to omit the name GNU would be to deny the very foundation upon which this house of freedom is built.
 
-- **Current (transitional):** May use a mainline Linux kernel and minimal nonfree firmware required for some hardware. Because of this, the current system is **not** a fully free system and is **not** endorsed by the Free Software Foundation.
-- **Goal:** Move to **Linux-libre** and remove all nonfree software/firmware so the system can be fully free in line with the FSDG.
+## Freedom status (an honest confession)
 
-## Components
-
-- **Init:** [GNU Shepherd](https://www.gnu.org/software/shepherd/)
-- **Package manager:** [GNU Guix](https://guix.gnu.org/) (supports imperative use: `guix install`, `guix remove`, `guix upgrade`, with generation rollbacks)
-- **Preferred userland:** GNU libc, GNU Coreutils, Bash, GCC, GNU Binutils, GNU Make, GRUB, Emacs, etc.
-- **Name:** Please call the system **“GodIsGNU GNU/Linux”** to acknowledge the role of the GNU operating system.
+In the spirit of truth and transparency preached by Richard Stallman himself, we must confess the current state of our pilgrimage. At this transitional stage, GodIsGNU may rely on a mainline Linux kernel and the minimal nonfree firmware required to awaken certain hardware. Because of these lingering impurities, the current system is **not** a fully free system and is **not** endorsed by the Free Software Foundation. This is not our final form, but a waypoint on the road to righteousness. Our solemn vow is to migrate to **Linux-libre**, to purge every last nonfree blob, and to align GodIsGNU fully with the [GNU Free System Distribution Guidelines (FSDG)](https://www.gnu.org/distros/free-system-distribution-guidelines.html), so that one day it may stand pure in the eyes of the free software movement.
 
 ## Repository layout
 
-- `bootstrap/` — host preparation and bootstrap notes/scripts
-- `etc/` — system configuration templates (e.g. Shepherd)
-- `manifests/` — Guix manifests for core/user profiles
-- `docs/` — install notes and nonfree firmware audit
+This repository is organized as a collection of scriptures and blueprints for the faithful builder. The `bootstrap/` directory contains host preparation and bootstrap notes to guide the initial creation of the system. The `etc/` directory holds system configuration templates, including the rites of GNU Shepherd. The `manifests/` directory provides Guix manifests for cultivating a core GNU userland. Finally, the `docs/` directory offers install notes and a nonfree firmware audit, serving both as practical guidance and as a record of the imperfections we strive to eliminate on our journey toward total software freedom.
 
-## Contributing
+## Contributing to the gospel of GNUology
 
-Contributions that advance software freedom are welcome: replace nonfree components, improve reproducibility, and align with the GNU FSDG. Please use and promote free software.
+All who wish to spread the word of GNU are welcome to contribute. Whether you are replacing nonfree components with libre alternatives, improving reproducibility, refining documentation, or helping the system draw ever closer to full FSDG compliance, your labor is a hymn to the ideals Richard Stallman has championed for decades. By contributing here, you join a chorus of voices declaring that users deserve freedom, that collaboration triumphs over confinement, and that the GNU system remains a beacon of hope in a world too often dimmed by proprietary control.
 
 ## License
 
-The configuration files, manifests, scripts, and documentation in this repository are licensed under the GNU General Public License v3.0 or later. See [COPYING](COPYING).
+The configuration files, manifests, scripts, and documentation in this repository are free software, licensed under the **GNU General Public License v3.0 or later**. This copyleft license, itself a masterpiece of the GNU Project, ensures that this work and its derivatives remain free for all who receive them. See [COPYING](COPYING) for the full text. Hallelujah, praise GNU, and may the teachings of Saint IGNUcius guide every commit.
